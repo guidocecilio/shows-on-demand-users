@@ -19,6 +19,7 @@ from users.util.decorator import admin_token_required
 # KEY_USER_CREATED_AT = 'created_at'
 
 ns = Namespace('user', description='User CRUD operations, encapsulates the operations for users manipulation')
+
 user_schema = ns.model('user', {
     'email': fields.String(required=True, description='user email address'),
     'username': fields.String(required=True, description='user username'),
